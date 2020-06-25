@@ -40,7 +40,7 @@
                 <p class="language_text">Nations, Tribes & Empires</p>
 
             </div>
-            
+
             <div class="customs_sec sections swiper-slide">
                 <img src="./assets/images/customs.jpg" alt="" class="customs_pic">
                 <p class="language_text">Customs</p>
@@ -71,6 +71,11 @@
 
     <script>
         var mySwiper = new Swiper('.swiper-container', {
+            effect: 'cube',
+            cubeEffect: {
+                shadowOffset: 20,
+                shadowScale: 1,
+            },
             autoHeight: false,
             spaceBetween: 30,
             initialSlide: 0,
