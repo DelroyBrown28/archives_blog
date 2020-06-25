@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>archives blog</title>
+    <link rel="stylesheet" href="./assets/css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--TOP CONTENTS-->
+    <div class="top_head_section">
+        <p class="top_caption_text">A true history data warehouse</p>
+        <div class="main_title">
+            <p class="main_title_archives">archives</p>
+            <p class="main_title_blog">blog.</p>
+        </div>
+    </div>
+    <!--// TOP CONTENTS-->
+
+    <!--MID CAROUSEL CONTENTS-->
+    <div class="mid_carousel_section swiper-container">
+
+        <div class="carousel swiper-wrapper">
+            <div class="language_sec sections swiper-slide"><span class="centered">Language</span></div>
+            <div class="nations_sec sections swiper-slide">Nations, Tribes & Empires</div>
+            <div class="customs_sec sections swiper-slide">Customs</div>
+            <div class="geneology_sec sections swiper-slide">Geneology</div>
+            <div class="science_sec sections swiper-slide">Science</div>
+            <div class="maps_sec sections swiper-slide">Maps</div>
+        </div>
+
+    </div>
+    <!--// MID CAROUSEL CONTENTS-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="./assets/javascript/script.js"></script>
+
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            autoHeight: false,
+            initialSlide: 0,
+            freeMode: true,
+            freeModeMomentum: true,
+            freeModeMomentumRatio: 0.5,
+            freeModeMomentumBounce: true,
+            freeModeMomentumBounceRatio: 1,
+            freeModeMomentumVelocityRatio: 1,
+            freeModeSticky: true,
+            freeModeMinimumVelocity: 0.02,
+
+
+        })
+    </script>
+
+</body>
+
+</html>
