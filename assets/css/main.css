@@ -52,8 +52,9 @@ html {
     }
 
     .main_title_blog {
-        font-size: 30px;
+        font-size: 20px;
         margin: 0 0 0 auto;
+        margin-right: 15px;
 
     }
 
