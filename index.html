@@ -28,8 +28,12 @@
     <div class="mid_carousel_section swiper-container">
 
         <div class="carousel swiper-wrapper">
-            <div class="language_sec sections swiper-slide"><span class="centered">Language</span></div>
+            <div class="language_sec sections swiper-slide">
+                <p class="language_text">Language</p>
+            </div>
+
             <div class="nations_sec sections swiper-slide">Nations, Tribes & Empires</div>
+            
             <div class="customs_sec sections swiper-slide">Customs</div>
             <div class="geneology_sec sections swiper-slide">Geneology</div>
             <div class="science_sec sections swiper-slide">Science</div>
@@ -46,6 +50,7 @@
     <script>
         var mySwiper = new Swiper('.swiper-container', {
             autoHeight: false,
+            spaceBetween: 10,
             initialSlide: 0,
             freeMode: true,
             freeModeMomentum: true,
