@@ -4,159 +4,228 @@ html {
     width: 100vw;
     margin: 0;
     padding: 0;
+    overflow: auto;
     display: flex;
     flex-flow: column;
     font-family: 'Roboto Condensed', sans-serif;
-    background-color: #DFDED9;
+    background-color: #F3F0EB;
+
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 
 /* Smartphones ----------- */
 @media only screen and (min-width : 320px) {
 
-
-    /*----TOP SECTION----*/
-    .top_head_section {
+    .top_contents {
         width: 100%;
-        height: 30%;
+        height: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f1f1f1;
+    }
+
+    .burger_menu {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        left: 10px;
         display: flex;
         flex-flow: column;
+        justify-content: space-evenly;
 
     }
 
-
-    .top_caption_text {
-        margin: 10px 0 0px;
+    .lines {
+        height: 2px;
         width: 100%;
-        height: 20px;
-        text-align: center;
-        font-weight: 400;
-        font-size: 13px;
-
-
+        background: #000;
     }
+
+    
 
     .main_title {
-        width: 70%;
-        margin: auto;
+        font-size: 13px;
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+    }
+
+
+
+
+
+
+    .blog_contents {
+        display: flex;
+        height: 100%;
+
+    }
+
+    .blog_post_wrap {
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+
+
+    }
+
+    .blog_posts {
+        width: 100%;
+        height: 200px;
         display: flex;
         flex-flow: column;
-        align-items: center;
-        justify-content: center;
-
+        justify-content: space-evenly;
+        overflow: hidden;
 
     }
 
-    .main_title_archives {
+    .pink {
+        background: #ECDBD1 !important;
+    }
+
+    .grey {
+        background: #F3F0EB !important;
+    }
+
+    .religion_post {
+        background-color: darkgray;
+    }
+
+
+    .blog_title {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 20px;
+        margin: 10px 0 10px 0;
+        text-align: center;
+    }
+
+    .blog_author {
+        position: relative;
+        width: 75%;
+        margin: auto;
+        font-size: 12px;
+    }
+
+    .author {
+        position: absolute;
+        right: 0;
+    }
+
+
+
+    .blog_descrip {
+        font-size: 13px;
         margin: 0;
-        height: 70px;
-        font-size: 70px;
-
     }
 
-    .main_title_blog {
-        font-size: 20px;
-        margin: 0 0 0 auto;
-        margin-right: 15px;
-
-    }
-
-
-    /*----//  TOP SECTION----*/
-    /*----MID CAROUSEL SECTION----*/
-
-    .mid_carousel_section {
-        width: 100%;
-        height: 70%;
-        display: flex;
-        background-color: #575855;
-    }
-
-    .carousel {
-        width: 100%;
+    .blog_img_wrap {
+        margin: 0 auto;
+        width: 75%;
         height: 55%;
         display: flex;
-        margin: auto;
+        overflow: hidden;
 
     }
 
-    .sections {
-        position: relative;
+    .images {
+        height: 300px;
         width: 100%;
-        overflow: hidden;
         margin: auto;
+        filter: brightness(70%) grayscale(100%) invert(5%);
+
+    }
+
+    .race_image,
+    .hero_image {
+        transform: translateY(-30px);
+
+
+    }
+
+    .africa_image {
+        transform: translateY(-80px);
+
+    }
+
+    .world_image {
+        transform: translateY(-65px);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .race_article_wrap {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
         display: flex;
         flex-flow: column;
-        align-items: center;
-        justify-content: center;
-        font-size: 22px;
-        color: #fff;
-        background-color: #575855;
-
-
-    }
-
-    .language_text {
-        position: absolute;
-    }
-
-
-    .language_pic {
         height: 100%;
-        transform: scale(1.1);
-        filter: grayscale(100%) brightness(70%) invert(20%);
 
-    }
 
-    .tribes_pic {
-        height: 100%;
-        transform: scale(1.3);
-        filter: grayscale(100%) brightness(70%) invert(20%);
-
-    }
-
-    .customs_pic {
-        height: 100%;
-        transform: scale(1.4);
-        filter: grayscale(100%) brightness(70%) invert(20%);
-
-    }
-
-    .geneology_pic {
-        height: 100%;
-        transform: scale(1.1);
-        filter: grayscale(100%) brightness(70%) invert(20%);
 
 
     }
 
-    .science_pic {
-        height: 100%;
-        transform: scale(1.2);
-        filter: grayscale(100%) brightness(70%) invert(20%);
-
-    }
-
-    .map_pic {
-        height: 100%;
-        transform: scale(1.1);
-        filter: grayscale(100%) brightness(70%) invert(20%);
-
-    }
-
-
-    .bright_text {
-        position: absolute;
-        color: #fff;
+    .article_title {
         width: 100%;
-        height: 95%;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .race_article {
+        position: relative;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 22px;
+        margin: 0 auto;
+        height: 100%;
+        width: 85%;
+        font-size: 14px;
+        text-align: left;
+        word-wrap: normal;
+        overflow: auto;
+
+        display: none;
+
 
     }
 
-    /*----//  MID CAROUSEL SECTION----*/
 
+    .back_home {
+        position: relative;
+        height: 7%;
+        display: flex;
+
+    }
+
+    .back_button {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        background: #ECDBD1;
+        color: #000;
+        border: none;
+        outline: none;
+    }
 
 }
