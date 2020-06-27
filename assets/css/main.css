@@ -32,12 +32,18 @@ html {
 /* Smartphones ----------- */
 @media only screen and (min-width : 320px) {
 
-    .padding_wrap {
+    .padding_wrap,
+    .backToAfrica_wrap {
         height: calc(100% - 45px);
         width: calc(100% - 45px);
         display: flex;
         flex-flow: column;
         margin: auto;
+
+    }
+
+    .padding_wrap {
+        /*display: none;*/
     }
 
     /*----- TOP CONTENTS -----*/
@@ -80,17 +86,16 @@ html {
         margin: 0;
         overflow: auto;
 
-
-
     }
 
-    .blog_posts_wrap {}
 
     .blog_posts {
+        position: relative;
         width: 100%;
         margin-bottom: 10px;
         display: flex;
         flex-flow: column;
+        transition: 0.4s;
     }
 
     .blog_post_title {
@@ -111,7 +116,12 @@ html {
         font-weight: 400;
     }
 
+    .widthClass {
+        width: 100%;
+    }
+
     .underline {
+        width: 100%;
         margin: 0;
         border: 1px solid rgba(0, 0, 0, 0.459);
     }
@@ -127,7 +137,8 @@ html {
 
     }
 
-    .to_archives_btn {
+    .to_archives_btn,
+    .to_articles_btn {
         height: 60px;
         width: 100px;
         background: transparent;
@@ -154,18 +165,99 @@ html {
 
     }
 
-
-
-
     /*-----//  BOTTOM CONTENTS -----*/
-    /*----- HOVERS & SUCH -----*/
-    
-    
-    
-    .to_archives_btn:active {
-        box-shadow: none;
+    /*----- GO BACK TO AFRICA POST -----*/
+
+
+    .backToAfrica_wrap {
+        display: none;
     }
-    
-    
+
+    .backToAfrica_top_body {
+        display: flex;
+        flex-flow: column;
+
+    }
+
+    .backToAfrica_title {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .backToAfrica_description {
+        margin: 0;
+        font-size: 15px;
+        line-height: 10px;
+    }
+
+    .backToAfrica_author {
+        font-size: 10px;
+        margin-top: 7px;
+    }
+
+    svg {
+        height: 13px;
+
+    }
+
+    /*----- GO BACK TO AFRICA ARTICLE -----*/
+
+    .article_wrap {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        margin-top: 10px;
+
+    }
+
+    .backToAfrica_article {
+        width: 100%;
+        height: 90%;
+        margin: auto;
+        padding: 5px 0;
+        font-size: 13px;
+        text-align: left;
+        word-wrap: none;
+        overflow: auto;
+        border-top: 4px solid #009E73;
+        border-bottom: 4px solid #009E73;
+
+    }
+
+    /*-----//  GO BACK TO AFRICA ARTICLE -----*/
+    /*----- BACK TO AFRICA BOTTOM CONTENTS -----*/
+
+
+    .backToAfrica_btm_contents {
+        display: flex;
+        width: 100%;
+
+    }
+
+    .to_articles_btn {
+        background: #000;
+        opacity: 0;
+    }
+
+
+
+
+    /*-----//  BACK TO AFRICA BOTTOM CONTENTS -----*/
+    /*-----//  GO BACK TO AFRICA POST -----*/
+    /*----- HOVERS & SUCH -----*/
+
+
+
+    .to_archives_btn:active,
+    .to_articles_btn:active {
+        box-shadow: none;
+        opacity: 0.5;
+    }
+
+    .blog_posts:active {
+        opacity: 0.5;
+    }
+
+
     /*-----//  HOVERS & SUCH -----*/
 }
