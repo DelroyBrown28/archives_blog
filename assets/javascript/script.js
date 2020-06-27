@@ -25,8 +25,11 @@ $(document).ready(function () {
         $('.backToAfrica_wrap').fadeOut('fast', function () {
             $('.padding_wrap').fadeIn('slow', function () {
                 $('.blog_posts').animate({
-                    left: '0',
-                    opacity: '1'
+                    left: '0'
+                }, function () {
+                    $('.blog_posts').animate({
+                        opacity: '1'
+                    }, 100)
                 })
             });
         });

@@ -96,6 +96,7 @@ html {
         display: flex;
         flex-flow: column;
         transition: 0.4s;
+        z-index: 1;
     }
 
     .blog_post_title {
@@ -149,7 +150,7 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-weight: 200;
+        font-weight: 600;
         font-size: 14px;
         text-align: center;
         color: #fff;
@@ -255,7 +256,7 @@ html {
     }
 
     .blog_posts:active {
-        opacity: 0.5;
+        opacity: 0.3;
     }
 
 
