@@ -1,15 +1,10 @@
 $(document).ready(function () {
 
+    // Takes you to archives. page
 
-    $('.race_post').click(function () {
-        $('.blog_contents').fadeOut('fast', function () {
-            $('.race_article').fadeIn();
+    setTimeout(() => {
+        $('.to_archives_btn').click(function () {
+            location.href = "https://delroybrown28.github.io/archive/index.html";
         })
-    })
-
-    $('.back_button').click(function () {
-        $('.race_article').fadeOut('fast', function () {
-            $('.blog_contents').fadeIn();
-        })
-    })
+    }, 5000);
 })

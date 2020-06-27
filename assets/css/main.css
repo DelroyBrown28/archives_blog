@@ -7,8 +7,8 @@ html {
     overflow: auto;
     display: flex;
     flex-flow: column;
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: #F3F0EB;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f1f1;
 
 }
 
@@ -16,216 +16,156 @@ html {
     display: none;
 }
 
+:root {
+    --border: 1px solid red;
+}
+
+#green_text {
+    color: #009E73;
+}
+
+.article_text_bold {
+    font-weight: 600;
+}
+
 
 /* Smartphones ----------- */
 @media only screen and (min-width : 320px) {
 
-    .top_contents {
-        width: 100%;
-        height: 7%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #f1f1f1;
-    }
-
-    .burger_menu {
-        position: absolute;
-        height: 20px;
-        width: 20px;
-        left: 10px;
+    .padding_wrap {
+        height: calc(100% - 45px);
+        width: calc(100% - 45px);
         display: flex;
         flex-flow: column;
-        justify-content: space-evenly;
-
-    }
-
-    .lines {
-        height: 2px;
-        width: 100%;
-        background: #000;
-    }
-
-    
-
-    .main_title {
-        font-size: 13px;
-        font-weight: 600;
-        text-align: center;
-        width: 100%;
-    }
-
-
-
-
-
-
-    .blog_contents {
-        display: flex;
-        height: 100%;
-
-    }
-
-    .blog_post_wrap {
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-
-
-    }
-
-    .blog_posts {
-        width: 100%;
-        height: 200px;
-        display: flex;
-        flex-flow: column;
-        justify-content: space-evenly;
-        overflow: hidden;
-
-    }
-
-    .pink {
-        background: #ECDBD1 !important;
-    }
-
-    .grey {
-        background: #F3F0EB !important;
-    }
-
-    .religion_post {
-        background-color: darkgray;
-    }
-
-
-    .blog_title {
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 20px;
-        margin: 10px 0 10px 0;
-        text-align: center;
-    }
-
-    .blog_author {
-        position: relative;
-        width: 75%;
         margin: auto;
-        font-size: 12px;
     }
 
-    .author {
-        position: absolute;
-        right: 0;
+    /*----- TOP CONTENTS -----*/
+
+    .top_body {
+        width: calc(100% - 10px);
+
     }
 
-
-
-    .blog_descrip {
-        font-size: 13px;
+    .title {
+        line-height: 35px;
         margin: 0;
     }
 
-    .blog_img_wrap {
-        margin: 0 auto;
-        width: 75%;
-        height: 55%;
-        display: flex;
-        overflow: hidden;
-
+    .subtitle {
+        line-height: 25px;
+        font-weight: 300;
     }
 
-    .images {
-        height: 300px;
+    .spread_text {
+        letter-spacing: 5px;
+    }
+
+
+
+    /*-----//  TOP CONTENTS -----*/
+    /*----- BLOG CONTENTS -----*/
+
+    .articles_text {
         width: 100%;
-        margin: auto;
-        filter: brightness(70%) grayscale(100%) invert(5%);
-
-    }
-
-    .race_image,
-    .hero_image {
-        transform: translateY(-30px);
-
-
-    }
-
-    .africa_image {
-        transform: translateY(-80px);
-
-    }
-
-    .world_image {
-        transform: translateY(-65px);
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .race_article_wrap {
-        width: 90%;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-flow: column;
-        height: 100%;
-
-
-
-
-    }
-
-    .article_title {
-        width: 100%;
+        margin: 15px 0;
+        font-size: 15px;
         text-align: center;
-        font-size: 17px;
-        font-weight: 600;
     }
 
-    .race_article {
-        position: relative;
-        display: flex;
-        margin: 0 auto;
-        height: 100%;
-        width: 85%;
-        font-size: 14px;
-        text-align: left;
-        word-wrap: normal;
+
+    .blog_wrap {
+        height: 55%;
+        width: 100%;
+        margin: 0;
         overflow: auto;
 
-        display: none;
 
 
     }
 
+    .blog_posts_wrap {}
 
-    .back_home {
-        position: relative;
-        height: 7%;
-        display: flex;
-
-    }
-
-    .back_button {
-        margin: auto;
+    .blog_posts {
         width: 100%;
-        height: 100%;
-        background: #ECDBD1;
-        color: #000;
-        border: none;
-        outline: none;
+        margin-bottom: 10px;
+        display: flex;
+        flex-flow: column;
     }
 
+    .blog_post_title {
+        margin: 0;
+        font-weight: 500;
+        font-size: 13px;
+        color: #009E73;
+    }
+
+    .blog_description {
+        margin: 0;
+        font-size: 13px;
+    }
+
+
+    .article_by {
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .underline {
+        margin: 0;
+        border: 1px solid rgba(0, 0, 0, 0.459);
+    }
+
+
+    /*-----//  BLOG CONTENTS -----*/
+    /*----- BOTTOM CONTENTS -----*/
+
+
+    .bottom_body {
+        display: flex;
+        margin-top: 20px;
+
+    }
+
+    .to_archives_btn {
+        height: 60px;
+        width: 100px;
+        background: transparent;
+        background: #009E73;
+        margin-left: auto;
+        border-radius: 7px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 200;
+        font-size: 14px;
+        text-align: center;
+        color: #fff;
+        outline: none;
+        transition: 0.4s;
+        box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.07),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.05),
+            0 12.5px 10px rgba(0, 0, 0, 0.042),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.035),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.028),
+            0 100px 80px rgba(0, 0, 0, 0.02);
+
+    }
+
+
+
+
+    /*-----//  BOTTOM CONTENTS -----*/
+    /*----- HOVERS & SUCH -----*/
+    
+    
+    
+    .to_archives_btn:active {
+        box-shadow: none;
+    }
+    
+    
+    /*-----//  HOVERS & SUCH -----*/
 }
