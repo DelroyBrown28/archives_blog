@@ -41,6 +41,9 @@ $(document).ready(function () {
         $('.backToAfrica_article').animate({
             opacity: '0'
         }, function () {
+            $('.to_articles_btn').animate({
+                opacity: '0'
+            })
             $('.popup_article_image').animate({
                 opacity: '1'
             }, function () {
@@ -60,6 +63,10 @@ $(document).ready(function () {
         }, function () {
             $('.backToAfrica_article').animate({
                 opacity: '1'
+            }, function() {
+                $('.to_articles_btn').animate({
+                    opacity: '1'
+                })
             })
         })
     })
