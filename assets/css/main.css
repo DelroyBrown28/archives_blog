@@ -177,6 +177,7 @@ html {
     .backToAfrica_top_body {
         display: flex;
         flex-flow: column;
+                
 
     }
 
@@ -196,10 +197,21 @@ html {
         margin-top: 7px;
     }
 
+    .line_1 {
+        position: relative;
+        width: 100px;
+        border: 4px solid #009E73;
+        
+        
+    }
+
     svg {
+        margin-top: 3px;
         height: 13px;
 
     }
+
+    
 
     /*----- GO BACK TO AFRICA ARTICLE -----*/
 
@@ -255,9 +267,6 @@ html {
         opacity: 0.5;
     }
 
-    .blog_posts:active {
-        opacity: 0.3;
-    }
 
 
     /*-----//  HOVERS & SUCH -----*/
