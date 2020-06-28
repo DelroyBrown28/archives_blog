@@ -35,4 +35,33 @@ $(document).ready(function () {
         });
     })
 
+    // Article image enlarge
+
+    $('.in_blog_image').click(function () {
+        $('.backToAfrica_article').animate({
+            opacity: '0'
+        }, function () {
+            $('.popup_article_image').animate({
+                opacity: '1'
+            }, function () {
+                $('.close_btn').animate({
+                    opacity: '1'
+                })
+            })
+        })
+    })
+
+
+    // Closes article image
+
+    $('.close_btn').click(function () {
+        $('.popup_article_image').animate({
+            opacity: '0'
+        }, function () {
+            $('.backToAfrica_article').animate({
+                opacity: '1'
+            })
+        })
+    })
+
 });
